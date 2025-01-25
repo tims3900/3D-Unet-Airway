@@ -24,5 +24,5 @@ The following augmentation techniques are applied upon the dataset:
 The dataset used in this project is available at the following link:            
 > [BAS Dataset](https://github.com/EndoluminalSurgicalVision-IMR/ATM-22-Related-Work/tree/main/BAS-Dataset)
 ## Refrences
-The implementation of is based on this paper:                                     
+The implementation is based on this paper:                                     
 > [Automatic airway segmentation from Computed Tomography using robust and efficient 3-D convolutional neural networks](https://arxiv.org/abs/2103.16328) 
