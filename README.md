@@ -3,6 +3,7 @@
 This repository contains a 3D U-Net implementation for lung segmentation using PyTorch. The model is trained and evaluated on a dataset of lung CT scans.
 
 ![image](https://github.com/user-attachments/assets/d0b98b17-9b80-4523-b7b2-4fbb7fdbb18a)
+![image](https://github.com/user-attachments/assets/d4b9df96-54a4-491e-a5d6-d1574ecf9bb4)
 
 ## Model Architecture
 
