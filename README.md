@@ -1,9 +1,10 @@
 # 3D U-Net for Lung Segmentation
 
-This repository contains a 3D U-Net implementation for lung segmentation using PyTorch. The model is trained and evaluated on a dataset of lung CT scans.
+This repository contains a 3D U-Net implementation for lung segmentation using PyTorch. The model is trained and evaluated on a dataset of lung CT scans. Achieved Dice score of 0.02 on training set and 0.06 on test set.
 
 ![image](https://github.com/user-attachments/assets/d0b98b17-9b80-4523-b7b2-4fbb7fdbb18a)
 ![image](https://github.com/user-attachments/assets/d4b9df96-54a4-491e-a5d6-d1574ecf9bb4)
+![image](https://github.com/user-attachments/assets/9ab9289a-f637-416d-bec8-6ef0a3f7b7a2)
 
 ## Model Architecture
 
@@ -20,7 +21,8 @@ The 3D U-Net implemented in this project follows a standard U-Net architecture w
 The following augmentation techniques are applied upon the dataset:
 
 - **Random Flipping:** Randomly flips the input patch and mask patch along a randomly chosen axis (depth, height, or width).
-- **Random Blackout:** Randomly selects a region within the patch and sets its pixel values to 0 for both the input and mask. This simulates occlusions or missing data in the input images.
+- **Random Rotating:** Randomly rotates the input patch and mask patch along the z-axis between a range of 10 - 30 degrees.
+- **Random Scaling:** Randomly scales the patch between a range of 0.75 and 1.25.
 - **Augmentation Probability:** The probability of applying augmentation is controlled by hyperparameters.
                                     
 ## Dataset                                                                      
